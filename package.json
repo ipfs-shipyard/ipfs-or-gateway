@@ -13,10 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/hacdias/ipfs-or-gateway.git"
   },
-  "author": "Protocol Labs, Inc.",
-  "contributors": [
-    "Henrique Dias <hacdias@gmail.com>"
-  ],
+  "author": "Henrique Dias <hacdias@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hacdias/ipfs-or-gateway/issues"
