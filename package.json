@@ -1,0 +1,35 @@
+{
+  "name": "ipfs-or-gateway",
+  "version": "1.0.0",
+  "description": "Download an hash via IPFS, falling back to an HTTP Gateway.",
+  "main": "index.js",
+  "bin": {
+    "ipfs-or-gateway": "./bin/index.js"
+  },
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacdias/ipfs-or-gateway.git"
+  },
+  "author": "Protocol Labs, Inc.",
+  "contributors": [
+    "Henrique Dias <hacdias@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hacdias/ipfs-or-gateway/issues"
+  },
+  "homepage": "https://github.com/hacdias/ipfs-or-gateway#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "node-fetch": "^2.3.0",
+    "tar": "^4.4.8",
+    "debug": "^4.1.1",
+    "yargs": "^13.2.1"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
