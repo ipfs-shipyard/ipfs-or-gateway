@@ -23,6 +23,10 @@ const argv = yargs
     alias: 'a',
     describe: 'api url',
     type: 'string'
+  }).option('verbose', {
+    alias: 'v',
+    describe: 'verbose progress',
+    type: 'bool'
   })
   .help()
   .argv
@@ -33,7 +37,8 @@ async function run () {
       cid: argv.cid,
       path: argv.path,
       clean: argv.clean,
-      api: argv.api
+      api: argv.api,
+      verbose: argv.verbose
     }
 
     await download(opts)
