@@ -23,6 +23,14 @@ const argv = yargs
     alias: 'a',
     describe: 'api url',
     type: 'string'
+  }).option('retries', {
+    alias: 'r',
+    describe: 'number of retries for each gateway',
+    type: 'number'
+  }).option('timeout', {
+    alias: 't',
+    describe: 'timeout of request without data from the server',
+    type: 'number'
   }).option('verbose', {
     alias: 'v',
     describe: 'verbose progress',
@@ -38,6 +46,8 @@ async function run () {
       path: argv.path,
       clean: argv.clean,
       api: argv.api,
+      retries: argv.retries,
+      timeout: argv.timeout,
       verbose: argv.verbose
     }
 
