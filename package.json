@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hacdias/ipfs-or-gateway#readme",
   "dependencies": {
+    "abort-controller": "^3.0.0",
     "debug": "^4.1.1",
     "fs-extra": "^8.0.1",
     "node-fetch": "^2.3.0",
