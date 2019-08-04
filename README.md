@@ -17,4 +17,4 @@ PRs accepted.
 
 ## License
 
-MIT © Henrique Dias
+MIT © Protocol Labs

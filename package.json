@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hacdias/ipfs-or-gateway.git"
+    "url": "git+https://github.com/ipfs-shipyard/ipfs-or-gateway.git"
   },
   "author": "Henrique Dias <hacdias@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hacdias/ipfs-or-gateway/issues"
+    "url": "https://github.com/ipfs-shipyard/ipfs-or-gateway/issues"
   },
-  "homepage": "https://github.com/hacdias/ipfs-or-gateway#readme",
+  "homepage": "https://github.com/ipfs-shipyard/ipfs-or-gateway#readme",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "debug": "^4.1.1",
