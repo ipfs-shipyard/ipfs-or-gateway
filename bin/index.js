@@ -31,10 +31,6 @@ const argv = yargs
     alias: 't',
     describe: 'timeout of request without data from the server',
     type: 'number'
-  }).option('verbose', {
-    alias: 'v',
-    describe: 'verbose progress',
-    type: 'bool'
   })
   .help()
   .argv
@@ -47,14 +43,12 @@ async function run () {
       clean: argv.clean,
       api: argv.api,
       retries: argv.retries,
-      timeout: argv.timeout,
-      verbose: argv.verbose
+      timeout: argv.timeout
     }
 
     await download(opts)
-    console.log(`Downloaded and extracted ${opts.cid} to ${opts.path}`)
   } catch (error) {
-    console.error(error)
+    console.error(error.toString())
   }
 }
 
