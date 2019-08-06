@@ -49,6 +49,7 @@ async function run () {
     await download(opts)
   } catch (error) {
     console.error(error.toString())
+    process.exit(1)
   }
 }
 
