@@ -8,8 +8,12 @@
 ## Usage
 
 ```
-npx ipfs-or-gateway -c cid -p path [--clean -a apiUrl]
+npx ipfs-or-gateway -c cid -p path [--clean --archive --compress -a apiUrl]
 ```
+
+- `--clean` – remove destination if it already exists
+- `--archive` – produce `.tar` archive instead of unpacked directory tree
+- `--compress` – compress produced archive with Gzipi, produce `.tar.gz` (requires `--archive`)
 
 ## Contributing
 
