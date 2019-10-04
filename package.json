@@ -1,6 +1,6 @@
 {
   "name": "ipfs-or-gateway",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Download an hash via IPFS, falling back to an HTTP Gateway.",
   "main": "./lib/index.js",
   "bin": {
