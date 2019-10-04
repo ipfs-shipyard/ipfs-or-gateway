@@ -18,35 +18,38 @@ const argv = yargs
     demandOption: true
   }).option('clean', {
     describe: 'clean path first',
-    type: 'boolean'
+    type: 'boolean',
+    default: false
+  }).option('archive', {
+    describe: 'output a TAR archive',
+    type: 'boolean',
+    default: false
+  }).option('compress', {
+    describe: 'compress the archive with GZIP compression',
+    type: 'boolean',
+    default: false
   }).option('api', {
     alias: 'a',
     describe: 'api url',
-    type: 'string'
+    type: 'string',
+    default: 'https://ipfs.io/api'
   }).option('retries', {
     alias: 'r',
     describe: 'number of retries for each gateway',
-    type: 'number'
+    type: 'number',
+    default: 3
   }).option('timeout', {
     alias: 't',
     describe: 'timeout of request without data from the server',
-    type: 'number'
+    type: 'number',
+    default: 60000
   })
   .help()
   .argv
 
 async function run () {
   try {
-    const opts = {
-      cid: argv.cid,
-      path: argv.path,
-      clean: argv.clean,
-      api: argv.api,
-      retries: argv.retries,
-      timeout: argv.timeout
-    }
-
-    await download(opts)
+    await download(argv)
   } catch (error) {
     console.error(error.toString())
     process.exit(1)
