@@ -4,11 +4,11 @@ const yargs = require('yargs')
 const download = require('../lib')
 
 const argv = yargs
-  .usage('$0', 'Download an hash via IPFS, falling back to an HTTP Gateway.')
+  .usage('$0', 'Download a CID via IPFS CLI, falling back to CAR and HTTP Gateway.')
   .scriptName('ipfs-or-gateway')
   .option('cid', {
     alias: 'c',
-    describe: 'cid to download',
+    describe: 'CID to download',
     type: 'string',
     demandOption: true
   }).option('path', {
@@ -30,9 +30,9 @@ const argv = yargs
     default: false
   }).option('api', {
     alias: 'a',
-    describe: 'api url',
+    describe: 'HTTP Gateway used for CAR export',
     type: 'string',
-    default: 'https://ipfs.io/api'
+    default: 'https://ipfs.io'
   }).option('retries', {
     alias: 'r',
     describe: 'number of retries for each gateway',
