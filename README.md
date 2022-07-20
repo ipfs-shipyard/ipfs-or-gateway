@@ -8,7 +8,7 @@
 ## Usage
 
 ```
-npx ipfs-or-gateway -c cid -p path [--clean --archive --compress -a apiUrl]
+npx ipfs-or-gateway -c cid -p path [--clean --archive --compress -g gatewayUrl]
 ```
 
 - `--clean` – remove destination if it already exists
