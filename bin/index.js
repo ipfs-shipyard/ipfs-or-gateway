@@ -28,8 +28,8 @@ const argv = yargs
     describe: 'compress the archive with GZIP compression',
     type: 'boolean',
     default: false
-  }).option('api', {
-    alias: 'a',
+  }).option('gateway', {
+    alias: 'g',
     describe: 'HTTP Gateway used for CAR export',
     type: 'string',
     default: 'https://ipfs.io'
