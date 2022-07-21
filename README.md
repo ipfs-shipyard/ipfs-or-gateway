@@ -13,7 +13,7 @@ npx ipfs-or-gateway -c cid -p path [--clean --archive --compress -g gatewayUrl]
 
 - `--clean` – remove destination if it already exists
 - `--archive` – produce `.tar` archive instead of unpacked directory tree
-- `--compress` – compress produced archive with Gzipi, produce `.tar.gz` (requires `--archive`)
+- `--compress` – compress produced archive with Gzip, produce `.tar.gz` (requires `--archive`)
 
 ## Contributing
 
